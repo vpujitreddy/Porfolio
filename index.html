@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pujit Reddy Velagala | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- PARTICLE BACKGROUND (ADDED FIX) -->
+    <canvas id="particles"></canvas>
+
+    <!-- LOADER -->
+    <div id="loader" role="button" tabindex="0" aria-label="Enter Portfolio">
+        <div class="loader-inner">
+            <div class="loader-title">Pujit Reddy Velagala</div>
+            <div class="loader-subtitle">Portfolio</div>
+            <div class="loader-click">Click Anywhere to Enter</div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="logo">Pujit Reddy</div>
+
+        <nav aria-label="Main Navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-box">
+                <p class="tagline">CREATING VISUAL STORIES</p>
+
+                <div class="role-wrapper">
+                    <span id="role-text"></span>
+                </div>
+
+                <p class="subtext">
+                    BSc Animation student passionate about Graphic Design, Video Editing, Animation & VFX.
+                </p>
+
+                <a class="btn" href="#work">View Work</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section page-card" id="about">
+            <h2>About</h2>
+
+            <div class="page-content">
+                <p id="typing-text"></p>
+                <span id="cursor" class="cursor">|</span>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <!-- Graphic Design -->
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <div>Graphic Design</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill gd" data-target="85">
+                            <span class="fill-text">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="soft-left">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
+                                alt="Photoshop" />
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="circle" data-target="85"><span>0%</span></div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="soft-left">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-original.svg"
+                                alt="Illustrator" />
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="circle" data-target="80"><span>0%</span></div>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <div>Video Editing</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill ve" data-target="85">
+                            <span class="fill-text">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="soft-left">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"
+                                alt="Premiere Pro" />
+                            <span>Premiere Pro</span>
+                        </div>
+                        <div class="circle" data-target="85"><span>0%</span></div>
+                    </div>
+                </div>
+
+                <!-- Animation -->
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <div>Animation</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill an" data-target="65">
+                            <span class="fill-text">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="soft-left">
+                            <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/animate.svg"
+                                alt="Adobe Animate" />
+                            <span>Adobe Animate</span>
+                        </div>
+                        <div class="circle" data-target="65"><span>0%</span></div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="soft-left">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
+                                alt="Maya" />
+                            <span>Maya</span>
+                        </div>
+                        <div class="circle" data-target="60"><span>0%</span></div>
+                    </div>
+                </div>
+
+                <!-- VFX -->
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <div>VFX</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill vfx" data-target="65">
+                            <span class="fill-text">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="soft-left">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                                alt="After Effects" />
+                            <span>After Effects</span>
+                        </div>
+                        <div class="circle" data-target="65"><span>0%</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section class="section" id="work">
+            <h2>Works</h2>
+
+            <div class="work-scroll">
+                <div class="work-card">
+                    <h3>Project 1</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="work-card">
+                    <h3>Project 2</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="work-card">
+                    <h3>Project 3</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="work-card">
+                    <h3>Project 4</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section page-card" id="contact">
+            <h2>Contact</h2>
+
+            <div class="page-content">
+                <p>Let’s build something amazing together.</p>
+
+                <p>
+                    Email:
+                    <a href="mailto:v.pujithreddy02@gmail.com" rel="noopener noreferrer">
+                        v.pujithreddy02@gmail.com
+                    </a>
+                </p>
+
+                <a class="contact-btn" href="mailto:v.pujithreddy02@gmail.com">
+                    Contact Me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Pujit Reddy Velagala. All Rights Reserved.
+    </footer>
+
+    <!-- FIX: defer prevents DOM timing bugs -->
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+</body>
+
+</html>
